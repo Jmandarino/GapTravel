@@ -46,6 +46,14 @@ body {
   
 }
 
+.fadeIn {
+  -webkit-animation: fadeIn 3s; /* Safari 4+ */
+  -moz-animation:    fadeIn 3s; /* Fx 5+ */
+  -o-animation:      fadeIn 3s; /* Opera 12+ */
+  animation:         fadeIn 3s; /* IE 10+, Fx 29+ */
+}
+
+
 
 /* for the about page? */
 .img-portfolio {
@@ -104,6 +112,12 @@ header.carousel .fill {
 
   border-radius: 50%;
   border: 5px solid #20b3e8;
+}
+
+/* overwrite boostrap thumbail*/
+.thumbnail {
+    border: 0px !important;
+    
 }
 
 

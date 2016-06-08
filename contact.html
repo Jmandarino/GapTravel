@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Contact us or stop by to our office. You can also a Quote on your vacation">
     <meta name="author" content="">
 
     <title>GAP Travel - Contact Us</title>
@@ -19,6 +19,9 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+         <!-- Animate CSS library -->
+    <link href="css/animate.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
@@ -54,22 +57,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">GAP Travel</a>
+                <a class="navbar-brand" href="/">GAP Travel</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="about">About</a>
                     </li>
                     <li>
-                        <a href="Quotes.html">Quotes</a>
+                        <a href="Quotes">Quotes</a>
                     </li>
                     <li>
-                        <a href="contact.html" class='active-page'>Contact</a>
+                        <a href="contact" class='active-page'>Contact</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <!-- TODO: fix blog links -->
+                        <a href="/blog">Blog</a>
                     </li>
 
                 </ul>
@@ -84,7 +88,7 @@
 
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 animated fadeInDownBig">
                 <h1 class="page-header">Contact
 
                 </h1>
@@ -101,12 +105,14 @@
 
 
                 <div class="embed-responsive embed-responsive-4by3">
-                <iframe width="600" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuRdhw9XILRM2vMqH6GM1Tb8rwsZEEcpY&q=299+Wantagh+Ave,+Levittown,+NY+11756">
+                <iframe width="600" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuRdhw9XILRM2vMqH6GM1Tb8rwsZEEcpY&q=G+a+P+Travel,+Wantagh+Avenue,+Levittown,+NY"></iframe>
+                                                                                       
+                                                                                       
               </iframe>
             </div>
             </div>
             <!-- Contact Details Column -->
-            <div class="col-md-4">
+            <div class="col-md-4 animated slideInRight">
                 <h3>Contact Details</h3>
                 <p>
                     299 Wantagh Ave<br>Levittown, NY 11756<br>
@@ -117,7 +123,7 @@
                     <abbr title="Email">E</abbr>: <a href="mailto:adam@gaptravelagency.com">Adam@gaptravelagency.com</a>
                 </p>
                 <p><i class="fa fa-clock-o"></i>
-                    <abbr title="Hours">H</abbr>: Today's hours:<span id="hoursOfOperation"> </span></p>
+                    <abbr title="Hours">H</abbr><span id="hours">: Today's hours:</span><span id="hoursOfOperation"> </span></p>
                 <ul class="list-unstyled list-inline list-social-icons">
                     <li>
                         <a href="https://www.facebook.com/GAP-Travel-116509041734509/"><i class="fa fa-facebook-square fa-2x"></i></a>
@@ -174,8 +180,10 @@
                     <!-- For protection agenst bots-->
                     <input type="text" name="_gotcha" style="display:none" />
                     <!--  on submit stay on page-->
-                    <input type="hidden" name="_next" value="http://localhost/gaptravel/contact.html#messageUs" />
-                    <button type="submit" value="Send" class="btn btn-primary">Send Message</button>
+                    <input type="hidden" name="_next" value="http://localhost/contact.html#messageUs" />
+                    <!-- email subject-->
+                    <input type="hidden" name="_subject" value="Website Form Contact" />
+                    <button id ="sendMessage" type="submit" value="Send" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
 
