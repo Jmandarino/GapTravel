@@ -67,14 +67,26 @@ body {
 /* Home Page Carousel */
 
 header.carousel {
-    height: 50%;
+    /*height: 50%;
+    
+    original height*/
+    
+    height: 75%;
+}
+
+.carousel-caption > h1 {
+    color: red;
+    
 }
 
 header.carousel .item,
 header.carousel .item.active,
 header.carousel .carousel-inner {
     height: 100%;
+    max-width: none;
 }
+
+
 
 header.carousel .fill {
     width: 100%;
@@ -143,6 +155,11 @@ footer {
     .img-related {
         margin-bottom: 30px;
     }
+    
+    /* bigger carousel for larger screen */
+    header.carousel {
+    height: 75%;
+    }
 }
 
 @media(max-width:767px) {
@@ -150,8 +167,8 @@ footer {
         margin-bottom: 15px;
     }
 
-    header.carousel .carousel {
-        height: 70%;
+    header.carousel {
+        height: 50%;
     }
 }
 
