@@ -1,0 +1,241 @@
+
+/* Global Styles */
+
+html,
+body {
+    font-family: Roboto, sans-serif;
+    height: 100%;
+    
+    color: #888;
+}
+
+h1, h2, h3, h4{
+    
+    color: #555;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/* over writing quote button on index.html */
+.Quote-btn{
+    
+    background-color: #67c9ec;
+    color: white;
+}
+
+.Quote-btn:hover {
+    background-color: white;
+    color: #67c9ec;
+}
+/* animation timers */
+.carousel {
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-delay: 0s;
+    
+    -moz-animation-duration: 1.5s;
+    -moz-animation-delay: 0s;
+    
+    -ms-animation-duration: 1.5s;
+    -ms-animation-delay: 0s;
+    
+    -o-animation-duration: 1.5s;
+    -o-animation-delay: 0s;
+
+  
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 3s; /* Safari 4+ */
+  -moz-animation:    fadeIn 3s; /* Fx 5+ */
+  -o-animation:      fadeIn 3s; /* Opera 12+ */
+  animation:         fadeIn 3s; /* IE 10+, Fx 29+ */
+}
+
+
+
+/* for the about page? */
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+.headshot {
+
+  border-radius: 50%;
+  border: 5px solid #20b3e8;
+}
+
+/* overwrite boostrap thumbail*/
+.thumbnail {
+    border: 0px !important;
+    
+}
+
+
+.closed {
+  color: red;
+}
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+
+#socialMediaFooter{
+  font-size: 26px;
+
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+
+.navbar-default {
+  background-color: #20b3e8;
+  border-color: #67c9ec;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+
+/* navbar active tab changes on hover and on active */
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.active-page{
+    color: #ffffff;
+    /* underline for hover and focus */
+    box-shadow: 0 -2px #fff inset;
+    
+}
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #67c9ec;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #67c9ec;
+}
+.navbar-default .navbar-toggle {
+  border-color: #67c9ec;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #67c9ec;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #BCEDFF;
+  }
+    
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus,
+    .active-page{
+        color: #ffffff;
+        background-color: #6FD9FF;
+    }
+}
