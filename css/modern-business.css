@@ -75,10 +75,10 @@ header.carousel {
     height: 75%;
 }
 
-.carousel-caption > h1 {
+/*.carousel-caption > h1 {
     color: red;
-    
-}
+
+}*/
 
 header.carousel .item,
 header.carousel .item.active,
@@ -201,7 +201,7 @@ footer {
     box-shadow: 0 -2px #fff inset;
     
 }
-}
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
